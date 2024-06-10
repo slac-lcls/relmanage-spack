@@ -1,0 +1,111 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  specs:
+  - py-lcls-krtc
+  - py-matplotlib
+  - py-pyzmq ^libzmq~libsodium
+  - libnl
+  - py-pytest@7
+  - py-rich
+  - eigen
+  - git-lfs
+  - xtcdata@4.0.0
+  - py-psalg@4.0.0 ^boost+python
+  - py-p4p
+  - rapidjson
+  - py-dask-jobqueue
+  - py-pyqt5
+  - opencv
+  - openmpi@4.1.5
+  - py-pyqtgraph
+  - py-sympy
+  - cmake
+  - htop
+  - py-numba
+  - git
+  - py-jedi
+  - py-pytest-qt
+  - py-graphviz
+  - py-notebook
+  - py-jupyterlab
+  - py-qtpy
+  - py-scikit-beam
+  - py-ipdb
+  - py-flake8
+  - py-h5py~mpi ^hdf5~mpi
+  - ninja
+  - py-tables
+  - py-setproctitle
+  - py-holoviews
+  - py-dill
+  - py-psana@4.0.0
+  - py-xarray
+  - py-pyqode3-python
+  - py-ophyd
+  - py-pyepics
+  - py-networkfox
+  - libpressio+python
+  - py-ipywidgets
+  - readline
+  - py-bluesky
+  - py-prometheus-client
+  - py-amityping
+  - prometheus-cpp
+  - py-pytest-asyncio
+  - py-pip
+  - py-panel
+  - py-cython
+  - epics-base
+  - py-posix-ipc
+  - gcc@12.3.0
+  - py-transitions
+  - emacs
+  - py-distributed
+  - py-setuptools
+  - py-asyncqt
+  - py-pydantic
+  - py-seaborn
+  - psalg@4.0.0 ^boost+python
+  - py-numpy
+  - py-mypy-extensions
+  - py-pint
+  - py-pymongo
+  - py-requests
+  - vim
+  - py-pyfftw
+  - py-kafka-python
+  - py-dask
+  - py-ipympl
+  - rogue
+  - py-scikit-image
+  - py-scikit-learn
+  - curl
+  - py-mypy
+  - py-qtconsole
+  - py-mpi4py
+  - py-pyabel
+  - py-wheel
+  - gdb
+  - py-caproto
+  - py-pydot
+  - py-ipython
+  view:
+    default:
+      root: .spack-env/view
+      exclude: [openssh]
+    dev:
+      root: .spack-env/dev
+      exclude: [openssh, xtcdata, psalg, py-psalg, py-psana]
+  packages:
+    all:
+      target:
+      - x86_64_v3
+      compiler:
+      - gcc@12.3.0
+  concretizer:
+    unify: true
+  mirrors: {}
